@@ -1,0 +1,23 @@
+{
+  "name": "animationproject_spicynoodles",
+  "version": "1.0.0",
+  "description": "KEA Multimedia Design 3rd semester (Frontend) - Advanced Animation, animated infoscreen collaborated with The Danish Museum of Science &amp; Technology exhibition",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel *.html --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/md2eoseo/AnimationProject_SpicyNoodles.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/md2eoseo/AnimationProject_SpicyNoodles/issues"
+  },
+  "homepage": "https://github.com/md2eoseo/AnimationProject_SpicyNoodles#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
