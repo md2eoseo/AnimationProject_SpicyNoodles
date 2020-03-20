@@ -23,23 +23,24 @@ async function start() {
 function startManipulatingTheSvg() {
   console.log("startManipulatingTheSvg()");
   HTML.computer_off = document.querySelector("#computer_off");
-  HTML.blue_button = document.querySelector("#blue_button");
+  HTML.blueBtn = document.querySelector("#blue_button");
 
-  HTML.blue_button.addEventListener("click", function() {
-    console.log("clicked blue button");
-    HTML.section.innerHTML = svgData[1];
-  });
+  HTML.blueBtn.addEventListener("click", clickBlueBtn);
+}
 
-  // HTML.colors.forEach(ele =>
-  //   ele.addEventListener("click", function(e) {
-  //     console.log("colors!!");
-  //     color = ele.getAttribute("fill");
-  //   })
-  // );
-  // HTML.shapes.forEach(ele =>
-  //   ele.addEventListener("click", function(e) {
-  //     console.log("shapes!!");
-  //     ele.style.fill = color;
-  //   })
-  // );
+function clickBlueBtn() {
+  console.log("clicked blue button");
+  HTML.section.innerHTML = svgData[1];
+
+  HTML.screen_on = document.querySelector("#screen_on");
+
+  HTML.screen_on.addEventListener("click", selectMenu);
+}
+
+function selectMenu() {
+  console.log("selected menu");
+
+  HTML.screen_on.classList.add("zoom");
+  // HTML.section.innerHTML = "";
+  // HTML.section.style.backgroundColor = "#0D5D5A";
 }

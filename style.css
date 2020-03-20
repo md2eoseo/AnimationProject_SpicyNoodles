@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
 @keyframes blinkingButton {
   0% {
     fill: #000;
@@ -23,4 +28,17 @@
 
 #blue_button {
   animation: blinkingButton 1.2s infinite;
+}
+
+@keyframes zoom {
+  to {
+    transform: scale(1);
+  }
+  from {
+    transform: scale(10);
+  }
+}
+
+.zoom {
+  animation: zoom 3s 1;
 }
