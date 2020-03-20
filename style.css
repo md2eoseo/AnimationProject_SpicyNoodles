@@ -2,3 +2,25 @@
   margin: 0;
   padding: 0;
 }
+
+@keyframes blinkingButton {
+  0% {
+    fill: #000;
+  }
+  49% {
+    fill: #000;
+  }
+  60% {
+    fill: #78cdd5;
+  }
+  99% {
+    fill: #78cdd5;
+  }
+  100% {
+    fill: #000;
+  }
+}
+
+#blue_button {
+  animation: blinkingButton 1.2s infinite;
+}

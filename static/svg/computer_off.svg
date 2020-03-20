@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Retro_Computer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+<svg version="1.1" id="computer_off" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:url(#Rectangle_16_1_);}
@@ -84,7 +84,7 @@
 		<stop  offset="0" style="stop-color:#78CDD5"/>
 		<stop  offset="1" style="stop-color:#3F939B"/>
 	</radialGradient>
-	<path id="Path_23" class="st7" d="M850.6,659.9h40.7v30.5h-40.7V659.9z"/>
+	<path id="blue_button" class="st7" d="M850.6,659.9h40.7v30.5h-40.7V659.9z"/>
 	<g id="Group_40" transform="translate(432.905 650.97)">
 		
 			<linearGradient id="Rectangle_26_1_" gradientUnits="userSpaceOnUse" x1="-9.8197" y1="387.8614" x2="-9.8197" y2="386.9344" gradientTransform="matrix(481.267 0 0 -188.279 5018.2026 73095.8125)">
