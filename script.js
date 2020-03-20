@@ -1,4 +1,5 @@
 "use strict";
+import { gsap } from "gsap";
 require("@babel/polyfill");
 
 window.addEventListener("DOMContentLoaded", start);
@@ -8,14 +9,14 @@ const svgFiles = ["svg/computer_off.svg", "svg/computer_on.svg"];
 const svgData = [];
 
 async function start() {
-  HTML.section = document.querySelector("section");
+  HTML.computer = document.querySelector("div#computer");
 
   for (let i = 0; i < svgFiles.length; i++) {
     const response = await fetch(svgFiles[i]);
     svgData.push(await response.text());
   }
 
-  HTML.section.innerHTML = svgData[0];
+  HTML.computer.innerHTML = svgData[0];
 
   startManipulatingTheSvg();
 }
@@ -30,17 +31,23 @@ function startManipulatingTheSvg() {
 
 function clickBlueBtn() {
   console.log("clicked blue button");
-  HTML.section.innerHTML = svgData[1];
+  HTML.computer.innerHTML = svgData[1];
 
   HTML.screen_on = document.querySelector("#screen_on");
+  gsap.from(HTML.screen_on, { scaleY: 0.4 });
+  gsap.to(HTML.screen_on, { scaleY: 1, duration: 0.4 });
 
   HTML.screen_on.addEventListener("click", selectMenu);
 }
 
 function selectMenu() {
   console.log("selected menu");
+  HTML.computer_on = document.querySelector("#computer_on");
 
-  HTML.screen_on.classList.add("zoom");
-  // HTML.section.innerHTML = "";
-  // HTML.section.style.backgroundColor = "#0D5D5A";
+  gsap.to(HTML.computer_on, { scale: 2, duration: 2 });
+
+  // HTML.computer_on.addEventListener("animationend", function() {
+  //   HTML.computer.innerHTML = "";
+  //   HTML.computer.style.backgroundColor = "#0D5D5A";
+  // });
 }
