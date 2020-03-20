@@ -5,7 +5,11 @@ require("@babel/polyfill");
 window.addEventListener("DOMContentLoaded", start);
 
 const HTML = {};
-const svgFiles = ["svg/computer_off.svg", "svg/computer_on.svg"];
+const svgFiles = [
+  "svg/computer_off.svg",
+  "svg/computer_on.svg",
+  "svg/screen_zoomed.svg"
+];
 const svgData = [];
 
 async function start() {
@@ -42,9 +46,14 @@ function clickBlueBtn() {
 
 function selectMenu() {
   console.log("selected menu");
-  HTML.computer_on = document.querySelector("#computer_on");
 
-  gsap.to(HTML.computer_on, { scale: 2, duration: 2 });
+  // HTML.computer.classList.add("zoomed");
+  HTML.computer.style.width = "100vh";
+  HTML.computer.innerHTML = svgData[2];
+
+  // HTML.screen_zoomed = document.querySelector("#screen_zoomed");
+
+  // gsap.to(HTML.screen_zoomed, { scale: 3, duration: 1 });
 
   // HTML.computer_on.addEventListener("animationend", function() {
   //   HTML.computer.innerHTML = "";
