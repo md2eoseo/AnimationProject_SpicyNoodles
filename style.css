@@ -41,3 +41,15 @@ div.zoomed {
 #blue_button {
   animation: blinkingBlueButton 1.2s infinite;
 }
+
+/*------------evolution----------*/
+#timeline-container {
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  background: radial-gradient(#75c6c3, #3b6362);
+}
+
+.hide {
+  display: none;
+}
