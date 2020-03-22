@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  background-color: lightblue;
+  background: radial-gradient(#75c6c3, #3b6362);
 }
 
 div#computer {
