@@ -5,6 +5,7 @@ require("@babel/polyfill");
 window.addEventListener("DOMContentLoaded", start);
 
 const HTML = {};
+const SOUND = {};
 const svgFiles = [
   "svg/computer_off.svg",
   "svg/computer_on.svg",
@@ -35,6 +36,11 @@ function startManipulatingTheSvg() {
 
 function clickBlueBtn() {
   console.log("clicked blue button");
+
+  // audio effect
+  SOUND.blue_button = new Audio("sound/blue_button.wav");
+  SOUND.blue_button.play();
+
   HTML.computer.innerHTML = svgData[1];
 
   HTML.screen_on = document.querySelector("#screen_on");
@@ -48,7 +54,7 @@ function selectMenu() {
   console.log("selected menu");
 
   // HTML.computer.classList.add("zoomed");
-  HTML.computer.style.width = "100vh";
+  HTML.computer.style.width = "60vw";
   HTML.computer.innerHTML = svgData[2];
 
   // HTML.screen_zoomed = document.querySelector("#screen_zoomed");
