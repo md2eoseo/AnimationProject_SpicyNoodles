@@ -84,7 +84,7 @@
 		<stop  offset="0" style="stop-color:#78CDD5"/>
 		<stop  offset="1" style="stop-color:#3F939B"/>
 	</radialGradient>
-	<path id="blue_button" class="st7" d="M850.6,659.9h40.7v30.5h-40.7V659.9z"/>
+	<path id="blueBtn" class="st7" d="M850.6,659.9h40.7v30.5h-40.7V659.9z"/>
 	<g id="Group_40" transform="translate(432.905 650.97)">
 		
 			<linearGradient id="Rectangle_26_1_" gradientUnits="userSpaceOnUse" x1="-9.8197" y1="387.8614" x2="-9.8197" y2="386.9344" gradientTransform="matrix(481.267 0 0 -188.279 5018.2026 73095.8125)">

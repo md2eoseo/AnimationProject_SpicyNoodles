@@ -14,13 +14,17 @@ const svgFiles = [
 const svgData = [];
 
 async function start() {
+  console.log("start()");
+
   HTML.computer = document.querySelector("div#computer");
 
+  // fetch every svg files into svgData[]
   for (let i = 0; i < svgFiles.length; i++) {
     const response = await fetch(svgFiles[i]);
     svgData.push(await response.text());
   }
 
+  // set computer_off.svg when it starts
   HTML.computer.innerHTML = svgData[0];
 
   startManipulatingTheSvg();
@@ -28,41 +32,33 @@ async function start() {
 
 function startManipulatingTheSvg() {
   console.log("startManipulatingTheSvg()");
-  HTML.computer_off = document.querySelector("#computer_off");
-  HTML.blueBtn = document.querySelector("#blue_button");
 
+  HTML.blueBtn = document.querySelector("#blueBtn");
   HTML.blueBtn.addEventListener("click", clickBlueBtn);
 }
 
 function clickBlueBtn() {
-  console.log("clicked blue button");
+  console.log("clickBlueBtn()");
 
   // audio effect
-  SOUND.blue_button = new Audio("sound/blue_button.wav");
-  SOUND.blue_button.play();
+  SOUND.blueBtn = new Audio("sound/blueBtn.wav");
+  SOUND.blueBtn.play();
 
+  // set computer_on.svg when clicks blue button on computer_off.svg
   HTML.computer.innerHTML = svgData[1];
 
-  HTML.screen_on = document.querySelector("#screen_on");
-  gsap.from(HTML.screen_on, { scaleY: 0.4 });
-  gsap.to(HTML.screen_on, { scaleY: 1, duration: 0.4 });
+  // show animation on screenOn path
+  HTML.screenOn = document.querySelector("#screenOn");
+  gsap.from(HTML.screenOn, { scaleY: 0.4 });
+  gsap.to(HTML.screenOn, { scaleY: 1, duration: 0.4 });
 
-  HTML.screen_on.addEventListener("click", selectMenu);
+  HTML.screenOn.addEventListener("click", selectMenu);
 }
 
 function selectMenu() {
-  console.log("selected menu");
+  console.log("selectMenu()");
 
-  // HTML.computer.classList.add("zoomed");
+  // set screen_zoomed.svg fully in div#computer
   HTML.computer.style.width = "60vw";
   HTML.computer.innerHTML = svgData[2];
-
-  // HTML.screen_zoomed = document.querySelector("#screen_zoomed");
-
-  // gsap.to(HTML.screen_zoomed, { scale: 3, duration: 1 });
-
-  // HTML.computer_on.addEventListener("animationend", function() {
-  //   HTML.computer.innerHTML = "";
-  //   HTML.computer.style.backgroundColor = "#0D5D5A";
-  // });
 }
