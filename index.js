@@ -49,10 +49,34 @@ function clickBlueBtn() {
 
   // show animation on screenOn path
   HTML.screenOn = document.querySelector("#screenOn");
+  HTML.aboutBtn = document.querySelector("#aboutBtn");
+  HTML.usesBtn = document.querySelector("#usesBtn");
+  HTML.evolutionBtn = document.querySelector("#evolutionBtn");
+
   gsap.from(HTML.screenOn, { scaleY: 0.4 });
   gsap.to(HTML.screenOn, { scaleY: 1, duration: 0.4 });
 
-  HTML.screenOn.addEventListener("click", selectMenu);
+  HTML.aboutBtn.addEventListener("click", clickAboutBtn);
+  HTML.usesBtn.addEventListener("click", clickUsesBtn);
+  HTML.evolutionBtn.addEventListener("click", clickEvolutionBtn);
+}
+
+function clickAboutBtn() {
+  console.log("clickAboutBtn()");
+
+  window.location.href = "/about.html";
+}
+
+function clickUsesBtn() {
+  console.log("clickUsesBtn()");
+
+  window.location.href = "/uses.html";
+}
+
+function clickEvolutionBtn() {
+  console.log("clickEvolutionBtn()");
+
+  window.location.href = "/evolution.html";
 }
 
 function selectMenu() {
