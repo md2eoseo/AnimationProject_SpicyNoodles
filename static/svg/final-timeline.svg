@@ -19,7 +19,7 @@
 	<circle class="st1" cx="478.37" cy="280.76" r="13.91"/>
 	<circle class="st1" cx="650.89" cy="281" r="13.91"/>
 </g>
-<g id="infoboxes">
-	<line id="infoline" class="st0" x1="129.02" y1="267" x2="129.02" y2="227"/>
+<g id="timeline">
+	<line id="infoline" class="st0" x1="129.02" y1="267" x2="129.02" y2="267"/>
 </g>
 </svg>

@@ -54,7 +54,7 @@ function clickable() {
       HTML.infoline.setAttribute("x1", Math.floor(ele.cx.baseVal.value));
       HTML.infoline.setAttribute(
         "y1",
-        Math.floor(ele.cy.baseVal.value - 13.91)
+        Math.floor(ele.cy.baseVal.value - ele.r.baseVal.value)
       );
       HTML.infoline.setAttribute("x2", HTML.infoline.x1.baseVal.value);
       HTML.infoline.setAttribute("y2", HTML.infoline.y1.baseVal.value - 40);
