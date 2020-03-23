@@ -3,18 +3,7 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 457.8 390.9" style="enable-background:new 0 0 457.8 390.9;" xml:space="preserve">
 <style type="text/css">
-	#infobox .st0{fill:none;}
-	#infobox .st1{font-family:'Montserrat-Bold'; font-size:36px;}
-	#infobox .st2{font-family:'Montserrat-Light'; font-size:24px;}
+	
 </style>
-<g id="infobox">
-	<g>
-		<rect x="3.2" y="2" class="st0" width="455.8" height="388.9"/>
-		<path class="st0" d="M456.8,5.1v380.6H3.4V5.1H456.8 M459,0H1.2v390.9H459V0L459,0z"/>
-	</g>
-	<text id="title" transform="matrix(1 0 0 1 100.1121 281.8167)" class="st1">80s Computer</text>
-	<text id="description" transform="matrix(1 0 0 1 162.4812 313.9176)" class="st2">Description</text>
-	<image id="image" style="overflow:visible;enable-background:new;" width="2155" height="1939" xlink:href="img/80s-computer.png"  transform="matrix(0.114 0 0 0.114 107.2381 26.6723)">
-	</image>
-</g>
+
 </svg>

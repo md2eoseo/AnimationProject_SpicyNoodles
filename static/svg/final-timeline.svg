@@ -5,6 +5,9 @@
 <style type="text/css">
 	#timeline .st0{fill:#D9F1FD;stroke:#6FCCDD;stroke-width:5;stroke-miterlimit:10;}
 	#bullets .st1{fill:#2D0080;stroke:#6FCCDD;stroke-width:5;stroke-miterlimit:10;}
+	#infobox .st0{fill:#D9F1FD;stroke:#6FCCDD;stroke-width:5;stroke-miterlimit:10;}
+	#infobox .st1{font-family:'Montserrat-Bold'; font-size:36px;}
+	#infobox .st2{font-family:'Montserrat-Light'; font-size:24px;}
 </style>
 <g id="timeline">
 	<line class="st0" x1="0.17" y1="280.92" x2="115.12" y2="280.92"/>
@@ -12,6 +15,7 @@
 	<line class="st0" x1="317.66" y1="281.49" x2="462.05" y2="281.49"/>
 	<line class="st0" x1="494.68" y1="280.16" x2="639.07" y2="280.16"/>
 	<line class="st0" x1="666.37" y1="280.16" x2="792.47" y2="280.16"/>
+	<line id="infoline" class="st0" x1="129.02" y1="267" x2="129.02" y2="267"/>
 </g>
 <g id="bullets">
 	<circle class="st1" cx="129.02" cy="280.9" r="13.91"/>
@@ -19,7 +23,13 @@
 	<circle class="st1" cx="478.37" cy="280.76" r="13.91"/>
 	<circle class="st1" cx="650.89" cy="281" r="13.91"/>
 </g>
-<g id="timeline">
-	<line id="infoline" class="st0" x1="129.02" y1="267" x2="129.02" y2="267"/>
+<g id="infobox">
+	<g>
+		<rect x="15" y="15" class="st0" width="680" height="240"/>
+	</g>
+	<text id="title" transform="matrix(1 0 0 1 100.1121 281.8167)" class="st1">80s Computer</text>
+	<text id="description" transform="matrix(1 0 0 1 162.4812 313.9176)" class="st2">Description</text>
+	<image id="image" style="overflow:visible;enable-background:new;" width="2155" height="1939" xlink:href="img/80s-computer.png"  transform="matrix(0.114 0 0 0.114 107.2381 26.6723)">
+	</image>
 </g>
 </svg>
