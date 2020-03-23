@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", start);
 
 const HTML = {};
 const SOUND = {};
-const svgFiles = ["svg/final-timeline.svg", "svg/infobox.svg"];
+const svgFiles = ["svg/final-timeline.svg", "svg/final-infobox.svg"];
 const svgData = [];
 let info = {};
 
@@ -42,34 +42,30 @@ function clickable() {
   console.log("clickable()");
 
   // select bullets and add click event
-  document.querySelectorAll(".st1").forEach((ele, i) =>
+  document.querySelectorAll("#bullets circle").forEach((ele, i) =>
     ele.addEventListener("click", e => {
       // modifying infobox with selected info data
-      document.querySelector("text#title").innerHTML = info[i].title;
-      document.querySelector("text#year").innerHTML = info[i].year;
-      document.querySelector("text#description").innerHTML =
-        info[i].description;
-      document.querySelector(
-        "image#image"
-      ).href.baseVal = `img/${info[i].image}`;
+      document.querySelector("#title").innerHTML = info[i].title;
+      document.querySelector("#description").innerHTML = info[i].description;
+      document.querySelector("#image").href.baseVal = `img/${info[i].image}`;
 
       // move infoline
-      HTML.infoline = document.querySelector("#timeline-container #infoline");
+      HTML.infoline = document.querySelector("#infoline");
       HTML.infoline.setAttribute("x1", Math.floor(ele.cx.baseVal.value));
       HTML.infoline.setAttribute(
         "y1",
         Math.floor(ele.cy.baseVal.value - 13.91)
       );
       HTML.infoline.setAttribute("x2", HTML.infoline.x1.baseVal.value);
-      HTML.infoline.setAttribute("y2", HTML.infoline.y1.baseVal.value - 80);
+      HTML.infoline.setAttribute("y2", HTML.infoline.y1.baseVal.value - 40);
 
       // move infobox
       // https://stackoverflow.com/questions/479591/svg-positioning
-      //   HTML.infobox.setAttribute(
-      //     "transform",
-      //     `translate(${HTML.line.x2.baseVal.value - 25},${HTML.line.y2.baseVal
-      //       .value + 327})`
-      //   );
+      // HTML.infobox.setAttribute(
+      //   "transform",
+      //   `translate(${HTML.infoline.x2.baseVal.value - 25},${HTML.infoline.y2
+      //     .baseVal.value + 327})`
+      // );
     })
   );
 }
