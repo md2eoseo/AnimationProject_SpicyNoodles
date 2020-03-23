@@ -38,6 +38,11 @@
 	.st32{fill:url(#Path_21_1_);}
 	.st33{fill:url(#Path_22_1_);}
 	.st34{fill:#0D5D5A;}
+	.st35{fill:none;}
+	.st36{fill:none;stroke:#7BCED5;stroke-width:6;}
+	.st37{fill:#7BCED5;}
+	.st38{font-family:'Montserrat-Bold';}
+	.st39{font-size:32.2882px;}
 </style>
 <g id="computerOff" transform="translate(-421.48 -246.196)">
 	
@@ -249,5 +254,20 @@
 <g id="screenOn" transform="translate(509.952 307.671)">
 	<path id="Rectangle_23_1_" class="st34" d="M-364.2-176.2h316c2.8,0,5,2.2,5,5V74.1c0,2.8-2.2,5-5,5h-316c-2.8,0-5-2.2-5-5v-245.3
 		C-369.2-173.9-367-176.2-364.2-176.2z"/>
+	<g id="Rectangle_46">
+		<rect x="-349.2" y="-155.9" class="st35" width="286.2" height="57.8"/>
+		<rect x="-347.2" y="-153.8" class="st36" width="282.2" height="53.8"/>
+	</g>
+	<g id="Rectangle_47" transform="translate(0 58)">
+		<rect x="-349.2" y="-135.8" class="st35" width="286.2" height="57.8"/>
+		<rect x="-347.2" y="-133.8" class="st36" width="282.2" height="53.8"/>
+	</g>
+	<g id="Rectangle_48" transform="translate(0 116)">
+		<rect x="-349.2" y="-115.8" class="st35" width="286.2" height="57.8"/>
+		<rect x="-347.2" y="-113.8" class="st36" width="282.2" height="53.8"/>
+	</g>
+	<text transform="matrix(0.9849 0 0 1 -265.7271 -112.8098)" class="st37 st38 st39">ABOUT</text>
+	<text transform="matrix(0.9849 0 0 1 -248.501 -34.78)" class="st37 st38 st39">USES</text>
+	<text transform="matrix(0.9849 0 0 1 -305.48 43.2493)" class="st37 st38 st39">EVOLUTION</text>
 </g>
 </svg>

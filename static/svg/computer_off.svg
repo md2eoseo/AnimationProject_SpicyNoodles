@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="computer_off" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+<svg version="1.1" id="computerOff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:url(#Rectangle_16_1_);}
@@ -10,7 +10,7 @@
 	.st4{fill:url(#Rectangle_21_1_);}
 	.st5{fill:#111511;}
 	.st6{fill:url(#Rectangle_23_1_);}
-	.st7{fill:url(#Path_23_1_);}
+	.st7{fill:url(#blueBtn_1_);}
 	.st8{fill:url(#Rectangle_26_1_);}
 	.st9{fill:url(#Rectangle_27_1_);}
 	.st10{fill:url(#Rectangle_28_1_);}
@@ -80,7 +80,7 @@
 			C51.7,71.9,53.9,69.7,56.7,69.7z"/>
 	</g>
 	
-		<radialGradient id="Path_23_1_" cx="424.2256" cy="1036.4457" r="0.5" gradientTransform="matrix(40.693 0 0 -30.508 -16392.0293 32295.0449)" gradientUnits="userSpaceOnUse">
+		<radialGradient id="blueBtn_1_" cx="424.2256" cy="1036.4457" r="0.5" gradientTransform="matrix(40.693 0 0 -30.508 -16392.0293 32295.0449)" gradientUnits="userSpaceOnUse">
 		<stop  offset="0" style="stop-color:#78CDD5"/>
 		<stop  offset="1" style="stop-color:#3F939B"/>
 	</radialGradient>

@@ -8,7 +8,7 @@ const HTML = {};
 const SOUND = {};
 const svgFiles = [
   "svg/computer_off.svg",
-  "svg/computer_on.svg",
+  "svg/computer_on_with_menu.svg",
   "svg/screen_zoomed.svg"
 ];
 const svgData = [];
