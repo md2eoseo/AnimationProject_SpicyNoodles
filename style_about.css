@@ -1,4 +1,59 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Montserrat;
+}
+.about-container {
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  background: radial-gradient(#75c6c3, #3b6362);
+  text-align: center;
+  position: relative;
+}
+
+.info-container {
+  position: absolute;
+  top: 10vw;
+  left: 25vw;
+  text-align: left;
+  width: 50%;
+}
+.info-container h1 {
+  color: #43ffef;
+  font-weight: 800;
+  font-size: 2vw;
+  margin-bottom: 1vw;
+}
+.info-container p {
+  color: #43ffef;
+  font-weight: 200;
+  font-size: 1.5vw;
+}
+#about-screen {
+  width: 70%;
+}
+#back-button {
+  width: 12%;
+  margin-bottom: 5vw;
+  padding: 1vw;
+}
+.outline-computer {
+  text-align: center;
+  width: 100%;
+  height: 20vw;
+}
+
+.circle1 {
+  stroke: #43ffef;
+  fill: transparent;
+  stroke-width: 1px;
+  stroke-dasharray: 1800;
+  stroke-dashoffset: 1800;
+  animation: stroke 5s linear forwards;
+}
+@keyframes stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
