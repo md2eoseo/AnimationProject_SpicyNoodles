@@ -64,3 +64,63 @@
   }
 }
 /*------------Conference Page-------------*/
+.conference-container {
+  position: absolute;
+
+  height: 34vw;
+  width: 54vw;
+  top: 9vw;
+  left: 23vw;
+}
+.person-box1 {
+  position: absolute;
+  background-image: url(static/img/avatar-person.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 15vw;
+  width: 18vw;
+  top: 2vw;
+  left: 6vw;
+}
+.person-box2 {
+  position: absolute;
+  background-image: url(static/img/avatar-person.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 15vw;
+  width: 18vw;
+  top: 2vw;
+  left: 31vw;
+}
+.person-box3 {
+  position: absolute;
+  background-image: url(static/img/avatar-person.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 15vw;
+  width: 18vw;
+  top: 18vw;
+  left: 19vw;
+}
+.eyes1 {
+  position: absolute;
+  background-image: url(static/img/eyes.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  top: 6.5vw;
+  left: 12.2vw;
+  width: 5.5vw;
+  height: 3vw;
+  animation: blink 5s infinite;
+}
+@keyframes blink {
+  0%,
+  100% {
+    transform: scale(1, 0.05);
+  }
+  5%,
+  95% {
+    transform: scale(1, 1);
+  }
+}
