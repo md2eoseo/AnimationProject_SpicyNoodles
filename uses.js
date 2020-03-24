@@ -46,17 +46,33 @@ function startManipulatingTheSvg() {
 function clickWwwBtn() {
   console.log("clickWwwBtn()");
 
-  window.location.href = "/uses_www.html";
+  selectSound();
+  setTimeout(() => {
+    window.location.href = "/uses_www.html";
+  }, 2000);
 }
 
 function clickGamesBtn() {
   console.log("clickGamesBtn()");
 
-  window.location.href = "/uses_games.html";
+  selectSound();
+  setTimeout(() => {
+    window.location.href = "/uses_games.html";
+  }, 2000);
 }
 
 function clickHomeofficeBtn() {
   console.log("clickHomeofficeBtn()");
 
-  window.location.href = "/uses_homeoffice.html";
+  selectSound();
+  setTimeout(() => {
+    window.location.href = "/uses_homeoffice.html";
+  }, 2000);
+}
+
+function selectSound() {
+  console.log("selectSound()");
+
+  SOUND.selectBtn = new Audio("sound/selectBtn.wav");
+  SOUND.selectBtn.play();
 }

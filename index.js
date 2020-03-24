@@ -63,24 +63,42 @@ function clickBlueBtn() {
 function clickAboutBtn() {
   console.log("clickAboutBtn()");
 
-  window.location.href = "/about.html";
+  selectSound();
+  setTimeout(() => {
+    window.location.href = "/about.html";
+  }, 2000);
 }
 
 function clickUsesBtn() {
   console.log("clickUsesBtn()");
 
-  window.location.href = "/uses.html";
+  selectSound();
+  setTimeout(() => {
+    window.location.href = "/uses.html";
+  }, 2000);
 }
 
 function clickEvolutionBtn() {
   console.log("clickEvolutionBtn()");
 
-  window.location.href = "/evolution.html";
+  selectSound();
+  setTimeout(() => {
+    window.location.href = "/evolution.html";
+  }, 2000);
 }
 
 function clickSound() {
+  console.log("clickSound()");
+
   SOUND.blueBtn = new Audio("sound/blueBtn.wav");
   SOUND.blueBtn.play();
+}
+
+function selectSound() {
+  console.log("selectSound()");
+
+  SOUND.selectBtn = new Audio("sound/selectBtn.wav");
+  SOUND.selectBtn.play();
 }
 
 function selectMenu() {
