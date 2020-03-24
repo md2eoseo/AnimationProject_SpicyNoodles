@@ -21,3 +21,90 @@
   height: 12vh;
   padding: 1vw;
 }
+
+/* conference call */
+.call-container {
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  background: radial-gradient(#75c6c3, #3b6362);
+  text-align: center;
+  position: relative;
+}
+
+#call-screen {
+  width: 70%;
+}
+
+#back-button {
+  width: 12%;
+  margin-bottom: 5vw;
+  padding: 1vw;
+}
+
+.quick-alo-ph-img-circle {
+  position: absolute;
+  width: 12vw;
+  height: 12vw;
+  top: 20vw;
+  left: 44vw;
+  background: #00a1ff;
+  border-radius: 100%;
+}
+
+.phone img {
+  position: absolute;
+  top: 22vw;
+  left: 46vw;
+  width: 8%;
+  animation: quick-alo-circle-img-anim 1s infinite ease-in-out;
+  transform-origin: 50% 50%;
+}
+
+@-moz-keyframes quick-alo-circle-img-anim {
+  0% {
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+  10% {
+    -moz-transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    -moz-transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    -moz-transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    -moz-transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  50% {
+    -moz-transform: rotate(0) scale(1) skew(1deg);
+  }
+  100% {
+    -moz-transform: rotate(0) scale(1) skew(1deg);
+  }
+}
+
+@-webkit-keyframes quick-alo-circle-img-anim {
+  0% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+  }
+  10% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+  }
+}
