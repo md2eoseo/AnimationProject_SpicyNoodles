@@ -38,29 +38,6 @@
   animation: quick-alo-circle-img-anim 1s infinite ease-in-out;
   transform-origin: 50% 50%;
 }
-@-moz-keyframes quick-alo-circle-img-anim {
-  0% {
-    transform: rotate(0) scale(1) skew(1deg);
-  }
-  10% {
-    -moz-transform: rotate(-25deg) scale(1) skew(1deg);
-  }
-  20% {
-    -moz-transform: rotate(25deg) scale(1) skew(1deg);
-  }
-  30% {
-    -moz-transform: rotate(-25deg) scale(1) skew(1deg);
-  }
-  40% {
-    -moz-transform: rotate(25deg) scale(1) skew(1deg);
-  }
-  50% {
-    -moz-transform: rotate(0) scale(1) skew(1deg);
-  }
-  100% {
-    -moz-transform: rotate(0) scale(1) skew(1deg);
-  }
-}
 
 @-webkit-keyframes quick-alo-circle-img-anim {
   0% {
