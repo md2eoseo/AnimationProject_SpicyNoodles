@@ -41,8 +41,7 @@ function clickBlueBtn() {
   console.log("clickBlueBtn()");
 
   // audio effect
-  SOUND.blueBtn = new Audio("sound/blueBtn.wav");
-  SOUND.blueBtn.play();
+  clickSound();
 
   // set computer_on.svg when clicks blue button on computer_off.svg
   HTML.computer.innerHTML = svgData[1];
@@ -77,6 +76,11 @@ function clickEvolutionBtn() {
   console.log("clickEvolutionBtn()");
 
   window.location.href = "/evolution.html";
+}
+
+function clickSound() {
+  SOUND.blueBtn = new Audio("sound/blueBtn.wav");
+  SOUND.blueBtn.play();
 }
 
 function selectMenu() {

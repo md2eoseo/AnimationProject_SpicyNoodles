@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="screenUses" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 792 612" style="enable-background:new 0 0 792 612;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Rectangle_20_1_);}
+	.st1{fill:url(#Rectangle_21_1_);}
+	.st2{fill:#111511;}
+	.st3{fill:url(#Path_23_1_);}
+	.st4{fill:#0D5D5A;}
+	.st5{fill:none;}
+	.st6{fill:none;stroke:#7BCED2;stroke-width:9;}
+	.st7{fill:#7BCED2;}
+	.st8{font-family:'Montserrat-Bold';}
+	.st9{font-size:53.4993px;}
+	.transparent{fill:transparent;}
+</style>
+<g id="Group_36" transform="translate(0 0)">
+	
+		<linearGradient id="Rectangle_20_1_" gradientUnits="userSpaceOnUse" x1="1.3881" y1="612.9227" x2="1.3881" y2="612.2811" gradientTransform="matrix(1024 0 0 -768 -1023 470785)">
+		<stop  offset="0" style="stop-color:#B6DA9C;stop-opacity:0.659"/>
+		<stop  offset="1" style="stop-color:#203921"/>
+	</linearGradient>
+	<path id="Rectangle_20" class="st0" d="M17.3,18.1h762.3c2.9,0,5.3,2.4,5.3,5.3v569.1c0,2.9-2.4,5.3-5.3,5.3H17.3
+		c-2.9,0-5.3-2.4-5.3-5.3V23.4C12,20.5,14.4,18.1,17.3,18.1z"/>
+</g>
+<g id="Group_37" transform="translate(64.235 86.67)">
+	
+		<linearGradient id="Rectangle_21_1_" gradientUnits="userSpaceOnUse" x1="-62.8629" y1="525.5826" x2="-62.8629" y2="526.3004" gradientTransform="matrix(894.219 0 0 -564.673 56546.9375 297205.3125)">
+		<stop  offset="0" style="stop-color:#54652C"/>
+		<stop  offset="1" style="stop-color:#445223"/>
+	</linearGradient>
+	<path id="Rectangle_21" class="st1" d="M1.6-3.2h664.3c2.9,0,5.3,2.4,5.3,5.3v415.6c0,2.9-2.4,5.3-5.3,5.3H1.6
+		c-2.9,0-5.3-2.4-5.3-5.3V2.1C-3.7-0.8-1.3-3.2,1.6-3.2z"/>
+</g>
+<g id="Group_38" transform="translate(91.168 102.693)">
+	<path id="Rectangle_22" class="st2" d="M-5-7.1h626.5c2.9,0,5.3,2.4,5.3,5.3v390.5c0,2.9-2.4,5.3-5.3,5.3H-5
+		c-2.9,0-5.3-2.4-5.3-5.3V-1.8C-10.3-4.7-8-7.1-5-7.1z"/>
+</g>
+<radialGradient id="Path_23_1_" cx="-1.3338" cy="615.3259" r="0.5321" gradientTransform="matrix(73.555 0 0 -55.145 785.512 34482.3711)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#FEE990"/>
+	<stop  offset="1" style="stop-color:#99812E"/>
+</radialGradient>
+<path id="Path_23" class="st3" d="M659.6,529.4h55.5V571h-55.5V529.4z"/>
+<g id="screenOn" transform="translate(0 0)">
+	<g id="Group_39" transform="translate(99.017 111.726)">
+		<path id="Rectangle_23" class="st4" d="M-8.5-9.3h615.1c2.1,0,3.8,1.7,3.8,3.8v378.2c0,2.1-1.7,3.8-3.8,3.8H-8.5
+			c-2.1,0-3.8-1.7-3.8-3.8V-5.5C-12.2-7.6-10.6-9.3-8.5-9.3z"/>
+	</g>
+	<g id="homeofficeBtn">
+		<rect class="transparent" x="158.7" y="119.2" class="st5" width="481.5" height="95.9"/>
+		<rect x="162.1" y="122.5" class="st6" width="474.8" height="89.2"/>
+	</g>
+	<g id="gamesBtn" transform="translate(0 58)">
+		<rect class="transparent" x="158.7" y="190.5" class="st5" width="481.5" height="95.9"/>
+		<rect x="162.1" y="193.8" class="st6" width="474.8" height="89.2"/>
+	</g>
+	<g id="wwwBtn" transform="translate(0 116)">
+		<rect class="transparent" x="158.7" y="261.7" class="st5" width="481.5" height="95.9"/>
+		<rect x="162.1" y="265.1" class="st6" width="474.8" height="89.2"/>
+	</g>
+	<text transform="matrix(1 0 0 1 308.1005 190.4961)" class="st7 st8 st9">WWW</text>
+	<text transform="matrix(1 0 0 1 296.955 319.7867)" class="st7 st8 st9">GAMES</text>
+	<text transform="matrix(1 0 0 1 196.6444 449.0767)" class="st7 st8 st9">HOME OFFICE</text>
+</g>
+</svg>

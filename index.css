@@ -11,14 +11,12 @@
   background: radial-gradient(#75c6c3, #3b6362);
 }
 
-div#computer {
-  width: 75vh;
-  height: 100vh;
+#computer {
+  width: 76vh;
 }
 
-div.zoomed {
-  width: 100vw;
-  height: 100vh;
+#blueBtn {
+  animation: blinkingBlueButton 1.2s infinite;
 }
 
 @keyframes blinkingBlueButton {
@@ -37,8 +35,4 @@ div.zoomed {
   100% {
     fill: #000;
   }
-}
-
-#blueBtn {
-  animation: blinkingBlueButton 1.2s infinite;
 }
