@@ -13,8 +13,6 @@ let info = {};
 async function start() {
   console.log("start()");
 
-  HTML.evolution = document.querySelector("div#evolution-container");
-
   // fetch every svg files into svgData[]
   for (let i = 0; i < svgFiles.length; i++) {
     const response = await fetch(svgFiles[i]);
@@ -22,7 +20,7 @@ async function start() {
   }
 
   // set evolution.svg when it starts
-  HTML.evolution.innerHTML = svgData[0];
+  document.querySelector("#evolution-container").innerHTML = svgData[0];
 
   loadJSON();
 }
@@ -64,8 +62,7 @@ function clickBullet(ele, i) {
   document.querySelector("#image").href.baseVal = `img/${info[i].image}`;
 
   // remove .hide from #infobox
-  HTML.infobox = document.querySelector("#infobox");
-  HTML.infobox.classList.remove("hide");
+  document.querySelector("#infobox").classList.remove("hide");
 
   // move infoline
   HTML.infoline = document.querySelector("#infoline");
