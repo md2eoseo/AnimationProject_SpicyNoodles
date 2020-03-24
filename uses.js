@@ -8,6 +8,7 @@ const HTML = {};
 const SOUND = {};
 const svgFiles = ["svg/screenUses.svg"];
 const svgData = [];
+const soundDelay = 1800;
 
 async function start() {
   console.log("start()");
@@ -49,7 +50,7 @@ function clickWwwBtn() {
   selectSound();
   setTimeout(() => {
     window.location.href = "/uses_www.html";
-  }, 2000);
+  }, soundDelay);
 }
 
 function clickGamesBtn() {
@@ -58,7 +59,7 @@ function clickGamesBtn() {
   selectSound();
   setTimeout(() => {
     window.location.href = "/uses_games.html";
-  }, 2000);
+  }, soundDelay);
 }
 
 function clickHomeofficeBtn() {
@@ -67,7 +68,7 @@ function clickHomeofficeBtn() {
   selectSound();
   setTimeout(() => {
     window.location.href = "/uses_homeoffice.html";
-  }, 2000);
+  }, soundDelay);
 }
 
 function selectSound() {

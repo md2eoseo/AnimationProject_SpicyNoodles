@@ -12,6 +12,7 @@ const svgFiles = [
   "svg/screen_zoomed.svg"
 ];
 const svgData = [];
+const soundDelay = 1800;
 
 async function start() {
   console.log("start()");
@@ -33,8 +34,7 @@ async function start() {
 function startManipulatingTheSvg() {
   console.log("startManipulatingTheSvg()");
 
-  HTML.blueBtn = document.querySelector("#blueBtn");
-  HTML.blueBtn.addEventListener("click", clickBlueBtn);
+  document.querySelector("#blueBtn").addEventListener("click", clickBlueBtn);
 }
 
 function clickBlueBtn() {
@@ -45,6 +45,11 @@ function clickBlueBtn() {
 
   // set computer_on.svg when clicks blue button on computer_off.svg
   HTML.computer.innerHTML = svgData[1];
+
+  // set click event on blueBtn turned on
+  document
+    .querySelector("#blueBtnOn")
+    .addEventListener("click", clickBlueBtnOn);
 
   // show animation on screenOn path
   HTML.screenOn = document.querySelector("#screenOn");
@@ -60,13 +65,29 @@ function clickBlueBtn() {
   HTML.evolutionBtn.addEventListener("click", clickEvolutionBtn);
 }
 
+function clickBlueBtnOn() {
+  console.log("clickBlueBtnOn()");
+
+  // audio effect
+  clickSound();
+
+  // set computer_on.svg when clicks blue button on computer_off.svg
+  HTML.computer.innerHTML = svgData[0];
+
+  // show animation on screenOn path
+  HTML.screenOn = document.querySelector("#screenOn");
+
+  gsap.from(HTML.screenOn, { scaleY: 1 });
+  gsap.to(HTML.screenOn, { scaleY: 0, duration: 0.4 });
+}
+
 function clickAboutBtn() {
   console.log("clickAboutBtn()");
 
   selectSound();
   setTimeout(() => {
     window.location.href = "/about.html";
-  }, 2000);
+  }, soundDelay);
 }
 
 function clickUsesBtn() {
@@ -75,7 +96,7 @@ function clickUsesBtn() {
   selectSound();
   setTimeout(() => {
     window.location.href = "/uses.html";
-  }, 2000);
+  }, soundDelay);
 }
 
 function clickEvolutionBtn() {
@@ -84,7 +105,7 @@ function clickEvolutionBtn() {
   selectSound();
   setTimeout(() => {
     window.location.href = "/evolution.html";
-  }, 2000);
+  }, soundDelay);
 }
 
 function clickSound() {
