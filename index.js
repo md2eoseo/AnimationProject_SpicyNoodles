@@ -13,6 +13,7 @@ const svgFiles = [
 ];
 const svgData = [];
 const soundDelay = 1800;
+const offDelay = 400;
 
 async function start() {
   console.log("start()");
@@ -71,14 +72,17 @@ function clickBlueBtnOn() {
   // audio effect
   clickSound();
 
-  // set computer_on.svg when clicks blue button on computer_off.svg
-  HTML.computer.innerHTML = svgData[0];
-
   // show animation on screenOn path
-  HTML.screenOn = document.querySelector("#screenOn");
-
   gsap.from(HTML.screenOn, { scaleY: 1 });
   gsap.to(HTML.screenOn, { scaleY: 0, duration: 0.4 });
+
+  setTimeout(() => {
+    // set computer_on.svg when clicks blue button on computer_off.svg
+    HTML.computer.innerHTML = svgData[0];
+
+    // set click event on blueBtn turned off
+    document.querySelector("#blueBtn").addEventListener("click", clickBlueBtn);
+  }, offDelay);
 }
 
 function clickAboutBtn() {
