@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="evolution" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 792 371.7" style="enable-background:new 0 0 792 371.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#6FCCDD;stroke-width:5;stroke-miterlimit:10;}
+	.st1{fill:#2D0080;stroke:#6FCCDD;stroke-width:5;stroke-miterlimit:10;}
+	.st2{fill:#D9F1FD;stroke:#6FCCDD;stroke-width:5;stroke-miterlimit:10;}
+	.st3{font-family:'Montserrat-Bold';}
+	.st4{font-size:39.4024px;}
+	.st5{font-family:'Montserrat-Light';}
+	.st6{font-size:26.2682px;}
+	.st7{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<g id="timeline">
+	<line class="st0" x1="0.2" y1="324.9" x2="115.1" y2="324.9"/>
+	<line class="st0" x1="144" y1="325.5" x2="288.4" y2="325.5"/>
+	<line class="st0" x1="317.7" y1="325.5" x2="462" y2="325.5"/>
+	<line class="st0" x1="494.7" y1="324.2" x2="639.1" y2="324.2"/>
+	<line class="st0" x1="666.4" y1="324.2" x2="792.5" y2="324.2"/>
+	<line id="infoline" class="st0" x1="129" y1="311" x2="129" y2="311"/>
+</g>
+<g id="bullets">
+	<circle class="st1" cx="129" cy="324.9" r="13.9"/>
+	<circle class="st1" cx="302.3" cy="324.2" r="13.9"/>
+	<circle class="st1" cx="478.4" cy="324.8" r="13.9"/>
+	<circle class="st1" cx="650.9" cy="325" r="13.9"/>
+</g>
+<g id="infobox">
+	<g>
+		<rect x="81" y="17" class="st2" width="635" height="270.3"/>
+	</g>
+	<text id="title" transform="matrix(0.8928 0 0 1 408.9814 74.6774)" class="st3 st4">80s Computer</text>
+	<text id="description" transform="matrix(0.8928 0 0 1 414.9863 128.4196)" class="st5 st6">Description</text>
+	<image id="image" x="124.1" y="39.3" class="st7" width="226" height="226"/>
+</g>
+</svg>

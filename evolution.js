@@ -6,15 +6,14 @@ window.addEventListener("DOMContentLoaded", start);
 
 const HTML = {};
 const SOUND = {};
-const svgFiles = ["svg/final-timeline.svg", "svg/final-infobox.svg"];
+const svgFiles = ["svg/evolution.svg"];
 const svgData = [];
 let info = {};
 
 async function start() {
   console.log("start()");
 
-  HTML.timeline = document.querySelector("div#timeline-container");
-  HTML.infobox = document.querySelector("div#infobox-container");
+  HTML.evolution = document.querySelector("div#evolution-container");
 
   // fetch every svg files into svgData[]
   for (let i = 0; i < svgFiles.length; i++) {
@@ -22,9 +21,8 @@ async function start() {
     svgData.push(await response.text());
   }
 
-  // set final_timeline.svg and infobox.svg when it starts
-  HTML.timeline.innerHTML = svgData[0];
-  HTML.infobox.innerHTML = svgData[1];
+  // set evolution.svg when it starts
+  HTML.evolution.innerHTML = svgData[0];
 
   loadJSON();
 }
