@@ -67,7 +67,7 @@ function clickHomeofficeBtn() {
 
   selectSound();
   setTimeout(() => {
-    window.location.href = "/uses_homeoffice.html";
+    window.location.href = "/call.html";
   }, soundDelay);
 }
 
