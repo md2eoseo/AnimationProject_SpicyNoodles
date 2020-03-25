@@ -26,7 +26,7 @@
 	<circle class="st1" cx="478.4" cy="324.8" r="13.9"/>
 	<circle class="st1" cx="650.9" cy="325" r="13.9"/>
 </g>
-<g id="infobox">
+<g id="infobox" class="hide">
 	<g>
 		<rect x="81" y="17" class="st2" width="635" height="270.3"/>
 	</g>

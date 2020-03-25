@@ -12,6 +12,8 @@ const svgFiles = [
   "svg/screen_zoomed.svg"
 ];
 const svgData = [];
+const soundDelay = 1200;
+const offDelay = 400;
 
 async function start() {
   console.log("start()");
@@ -33,19 +35,22 @@ async function start() {
 function startManipulatingTheSvg() {
   console.log("startManipulatingTheSvg()");
 
-  HTML.blueBtn = document.querySelector("#blueBtn");
-  HTML.blueBtn.addEventListener("click", clickBlueBtn);
+  document.querySelector("#blueBtn").addEventListener("click", clickBlueBtn);
 }
 
 function clickBlueBtn() {
   console.log("clickBlueBtn()");
 
   // audio effect
-  SOUND.blueBtn = new Audio("sound/blueBtn.wav");
-  SOUND.blueBtn.play();
+  clickSound();
 
   // set computer_on.svg when clicks blue button on computer_off.svg
   HTML.computer.innerHTML = svgData[1];
+
+  // set click event on blueBtn turned on
+  document
+    .querySelector("#blueBtnOn")
+    .addEventListener("click", clickBlueBtnOn);
 
   // show animation on screenOn path
   HTML.screenOn = document.querySelector("#screenOn");
@@ -61,22 +66,64 @@ function clickBlueBtn() {
   HTML.evolutionBtn.addEventListener("click", clickEvolutionBtn);
 }
 
+function clickBlueBtnOn() {
+  console.log("clickBlueBtnOn()");
+
+  // audio effect
+  clickSound();
+
+  // show animation on screenOn path
+  gsap.from(HTML.screenOn, { scaleY: 1 });
+  gsap.to(HTML.screenOn, { scaleY: 0, duration: 0.4 });
+
+  setTimeout(() => {
+    // set computer_on.svg when clicks blue button on computer_off.svg
+    HTML.computer.innerHTML = svgData[0];
+
+    // set click event on blueBtn turned off
+    document.querySelector("#blueBtn").addEventListener("click", clickBlueBtn);
+  }, offDelay);
+}
+
 function clickAboutBtn() {
   console.log("clickAboutBtn()");
 
-  window.location.href = "/about.html";
+  selectSound();
+  setTimeout(() => {
+    window.location.href = "/about.html";
+  }, soundDelay);
 }
 
 function clickUsesBtn() {
   console.log("clickUsesBtn()");
 
-  window.location.href = "/uses.html";
+  selectSound();
+  setTimeout(() => {
+    window.location.href = "/uses.html";
+  }, soundDelay);
 }
 
 function clickEvolutionBtn() {
   console.log("clickEvolutionBtn()");
 
-  window.location.href = "/evolution.html";
+  selectSound();
+  setTimeout(() => {
+    window.location.href = "/evolution.html";
+  }, soundDelay);
+}
+
+function clickSound() {
+  console.log("clickSound()");
+
+  SOUND.blueBtn = new Audio("sound/blueBtn.wav");
+  SOUND.blueBtn.play();
+}
+
+function selectSound() {
+  console.log("selectSound()");
+
+  SOUND.selectBtn = new Audio("sound/selectBtn.wav");
+  SOUND.selectBtn.play();
 }
 
 function selectMenu() {

@@ -10,6 +10,22 @@
   background: radial-gradient(#75c6c3, #3b6362);
 }
 
+.back-button {
+  position: absolute;
+  left: 0.1vw;
+  width: 8vw;
+  height: 6vh;
+  padding: 1vw;
+}
+
+#home-button {
+  top: 2vh;
+}
+
+#back-button {
+  top: 8vh;
+}
+
 .hide {
   display: none;
 }
