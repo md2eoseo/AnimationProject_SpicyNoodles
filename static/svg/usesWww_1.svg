@@ -19,6 +19,8 @@
 	.st13{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
 	.st14{fill:none;stroke:#939598;stroke-width:2;stroke-miterlimit:10;}
 	.st15{fill:none;stroke:#D1D3D4;stroke-miterlimit:10;}
+	.st16{font-family:'Montserrat-Light';}
+	.st17{font-size:17.3213px;}
 </style>
 <g id="zoomed-screen">
 	<g id="Group_41" transform="translate(0 0)">
@@ -59,7 +61,7 @@
 <g id="googlescreen">
 	<path id="Rectangle_23_1_" class="st5" d="M90.1,104.2h615.1c2.1,0,3.8,1.7,3.8,3.8v378.2c0,2.1-1.7,3.8-3.8,3.8H90.1
 		c-2.1,0-3.8-1.7-3.8-3.8V107.9C86.4,105.9,88,104.2,90.1,104.2z"/>
-	<text transform="matrix(1 0 0 1 289.6208 242.6576)"><tspan x="0" y="0" class="st6 st7 st8">G</tspan><tspan x="55.4" y="0" class="st9 st7 st8">ô</tspan><tspan x="94.8" y="0" class="st10 st7 st8">ô</tspan><tspan x="134.2" y="0" class="st6 st7 st8">g</tspan><tspan x="175" y="0" class="st11 st7 st8">l</tspan><tspan x="191.6" y="0" class="st9 st7 st8">e</tspan></text>
+	<text transform="matrix(1 0 0 1 289.6208 242.6575)"><tspan x="0" y="0" class="st6 st7 st8">G</tspan><tspan x="55.4" y="0" class="st9 st7 st8">ô</tspan><tspan x="94.8" y="0" class="st10 st7 st8">ô</tspan><tspan x="134.2" y="0" class="st6 st7 st8">g</tspan><tspan x="175" y="0" class="st11 st7 st8">l</tspan><tspan x="191.6" y="0" class="st9 st7 st8">e</tspan></text>
 	<g id="searchbar">
 		<g id="searchBtn">
 			<circle class="st6" cx="602.4" cy="304.3" r="11.4"/>
@@ -73,6 +75,7 @@
 			<path class="st15" d="M191.3,306.1c0,8.3,6.7,15,15,15h400.1c8.3,0,15-6.7,15-15v-2.3c0-8.3-6.7-15-15-15H206.3
 				c-8.3,0-15,6.7-15,15V306.1z"/>
 		</g>
+		<text id="searchkey" transform="matrix(0.8966 0 0 1 226.4043 310.2051)" class="st16 st17">danish museum of science and technology|</text>
 	</g>
 </g>
 </svg>

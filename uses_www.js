@@ -31,19 +31,52 @@ function startManipulatingTheSvg() {
   console.log("startManipulatingTheSvg()");
 
   // show animation on screenOn path
-  HTML.screenOn = document.querySelector("#screenOn");
+  HTML.googlescreen = document.querySelector("#googlescreen");
   HTML.searchBtn = document.querySelector("#searchBtn");
+  HTML.searchkey = document.querySelector("#searchkey");
 
-  gsap.from(HTML.screenOn, { scaleY: 0.4 });
-  gsap.to(HTML.screenOn, { scaleY: 1, duration: 0.4 });
+  gsap.from(HTML.googlescreen, { scaleY: 0.4 });
+  gsap.to(HTML.googlescreen, { scaleY: 1, duration: 0.4 });
 
   HTML.searchBtn.addEventListener("click", clickSearchBtn);
+
+  typingSearchkey();
 }
 
 function clickSearchBtn() {
   console.log("clickSearchBtn()");
 
   HTML.computer.innerHTML = svgData[1];
+}
+
+function typingSearchkey() {
+  console.log("typingSearchkey()");
+
+  let i = 0,
+    cursor = false;
+  const searchkey = HTML.searchkey.textContent;
+  HTML.searchkey.textContent = "";
+  typing();
+
+  function typing() {
+    if (i < searchkey.length) {
+      HTML.searchkey.textContent = searchkey.slice(0, i++);
+      setTimeout(function() {
+        typing();
+      }, 100);
+    } else {
+      if (!cursor) {
+        HTML.searchkey.textContent = searchkey.slice(0);
+        cursor = true;
+      } else {
+        HTML.searchkey.textContent = searchkey.slice(0, -true);
+        cursor = false;
+      }
+      setTimeout(function() {
+        typing();
+      }, 800);
+    }
+  }
 }
 
 function selectSound() {
