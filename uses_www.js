@@ -6,6 +6,9 @@ window.addEventListener("DOMContentLoaded", start);
 
 const HTML = {};
 const SOUND = {};
+SOUND.typespace = new Audio("sound/typespace.mp3");
+SOUND.typekey1 = new Audio("sound/typekey1.mp3");
+SOUND.typekey2 = new Audio("sound/typekey2.mp3");
 const svgFiles = ["svg/usesWww_1.svg", "svg/usesWww_2.svg"];
 const svgData = [];
 const soundDelay = 1800;
@@ -58,8 +61,10 @@ function typingSearchkey() {
   HTML.searchkey.textContent = "";
   typing();
 
+  // https://stackoverflow.com/questions/3583724/how-do-i-add-a-delay-in-a-javascript-loop
   function typing() {
     if (i < searchkey.length) {
+      typingSound(searchkey[i]);
       HTML.searchkey.textContent = searchkey.slice(0, i++);
       setTimeout(function() {
         typing();
@@ -79,9 +84,10 @@ function typingSearchkey() {
   }
 }
 
-function selectSound() {
-  console.log("selectSound()");
+function typingSound(char) {
+  console.log("typingSound()");
 
-  SOUND.selectBtn = new Audio("sound/selectBtn.wav");
-  SOUND.selectBtn.play();
+  if (char === " ") SOUND.typespace.play();
+  else if (char.charCodeAt(0) % 2 === 0) SOUND.typekey1.play();
+  else if (char.charCodeAt(0) % 2 === 1) SOUND.typekey2.play();
 }
