@@ -6,11 +6,7 @@ window.addEventListener("DOMContentLoaded", start);
 
 const HTML = {};
 const SOUND = {};
-const svgFiles = [
-  "svg/computer_off.svg",
-  "svg/computer_on_with_menu.svg",
-  "svg/screen_zoomed.svg"
-];
+const svgFiles = ["svg/computer_off.svg", "svg/computer_on_with_menu.svg"];
 const svgData = [];
 const soundDelay = 1200;
 const offDelay = 400;
@@ -124,12 +120,4 @@ function selectSound() {
 
   SOUND.selectBtn = new Audio("sound/selectBtn.wav");
   SOUND.selectBtn.play();
-}
-
-function selectMenu() {
-  console.log("selectMenu()");
-
-  // set screen_zoomed.svg fully in div#computer
-  HTML.computer.style.width = "60vw";
-  HTML.computer.innerHTML = svgData[2];
 }
