@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 100vh;
+  background: radial-gradient(#75c6c3, #3b6362);
+}
+
+#computer {
+  width: 128vh;
+}
+
+.back-button {
+  width: 15vw;
+  height: 12vh;
+  padding: 1vw;
+}
+
+#game {
+  position: absolute;
+  left: 37vw;
+  top: 20vh;
+}
+.snake {
+  fill: #000;
+}
+
+.apple {
+  fill: #f00;
+}
+.game-over {
+  border-color: #fcc !important;
+}
