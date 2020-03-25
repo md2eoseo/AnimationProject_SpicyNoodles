@@ -47,7 +47,7 @@
 		<path id="Rectangle_23" class="st4" d="M-8.5-9.3h615.1c2.1,0,3.8,1.7,3.8,3.8v378.2c0,2.1-1.7,3.8-3.8,3.8H-8.5
 			c-2.1,0-3.8-1.7-3.8-3.8V-5.5C-12.2-7.6-10.6-9.3-8.5-9.3z"/>
 	</g>
-	<g id="homeofficeBtn">
+	<g id="wwwBtn">
 		<rect class="transparent" x="158.7" y="119.2" class="st5" width="481.5" height="95.9"/>
 		<rect x="162.1" y="122.5" class="st6" width="474.8" height="89.2"/>
 	</g>
@@ -55,7 +55,7 @@
 		<rect class="transparent" x="158.7" y="190.5" class="st5" width="481.5" height="95.9"/>
 		<rect x="162.1" y="193.8" class="st6" width="474.8" height="89.2"/>
 	</g>
-	<g id="wwwBtn" transform="translate(0 116)">
+	<g id="homeofficeBtn" transform="translate(0 116)">
 		<rect class="transparent" x="158.7" y="261.7" class="st5" width="481.5" height="95.9"/>
 		<rect x="162.1" y="265.1" class="st6" width="474.8" height="89.2"/>
 	</g>
