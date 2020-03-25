@@ -12,7 +12,7 @@ const svgFiles = [
   "svg/screen_zoomed.svg"
 ];
 const svgData = [];
-const soundDelay = 1800;
+const soundDelay = 1200;
 const offDelay = 400;
 
 async function start() {

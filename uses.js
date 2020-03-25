@@ -8,7 +8,7 @@ const HTML = {};
 const SOUND = {};
 const svgFiles = ["svg/screenUses.svg"];
 const svgData = [];
-const soundDelay = 1800;
+const soundDelay = 1200;
 
 async function start() {
   console.log("start()");

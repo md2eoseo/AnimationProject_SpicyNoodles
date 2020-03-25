@@ -12,6 +12,7 @@ SOUND.typekey2 = new Audio("sound/typekey2.mp3");
 const svgFiles = ["svg/usesWww_1.svg", "svg/usesWww_2.svg"];
 const svgData = [];
 const soundDelay = 1800;
+let clickedSearchBtn = false;
 
 async function start() {
   console.log("start()");
@@ -49,6 +50,7 @@ function startManipulatingTheSvg() {
 function clickSearchBtn() {
   console.log("clickSearchBtn()");
 
+  clickedSearchBtn = true;
   HTML.computer.innerHTML = svgData[1];
 }
 
@@ -67,10 +69,11 @@ function typingSearchkey() {
       typingSound(searchkey[i]);
       HTML.searchkey.textContent = searchkey.slice(0, i++);
       setTimeout(function() {
-        typing();
+        if (!clickedSearchBtn) typing();
       }, 100);
     } else {
       if (!cursor) {
+        SOUND.typespace.play();
         HTML.searchkey.textContent = searchkey.slice(0);
         cursor = true;
       } else {
@@ -78,7 +81,7 @@ function typingSearchkey() {
         cursor = false;
       }
       setTimeout(function() {
-        typing();
+        if (!clickedSearchBtn) typing();
       }, 800);
     }
   }
@@ -87,6 +90,7 @@ function typingSearchkey() {
 function typingSound(char) {
   console.log("typingSound()");
 
+  // https://www.techiedelight.com/character-to-ascii-code-javascript/
   if (char === " ") SOUND.typespace.play();
   else if (char.charCodeAt(0) % 2 === 0) SOUND.typekey1.play();
   else if (char.charCodeAt(0) % 2 === 1) SOUND.typekey2.play();
