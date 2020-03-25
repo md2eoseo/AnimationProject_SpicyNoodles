@@ -109,8 +109,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  top: 6.5vw;
-  left: 12.2vw;
+  top: 4.4vw;
+  left: 6.2vw;
   width: 5.5vw;
   height: 3vw;
   animation: blink 3s infinite;
@@ -121,8 +121,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  top: 6.5vw;
-  left: 37vw;
+  top: 4.4vw;
+  left: 6.2vw;
   width: 5.5vw;
   height: 3vw;
   animation: blink 3s infinite;
@@ -134,8 +134,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  top: 22.4vw;
-  left: 25vw;
+  top: 4.4vw;
+  left: 6.2vw;
   width: 5.5vw;
   height: 3vw;
   animation: blink 3s infinite;
@@ -156,24 +156,70 @@
   position: absolute;
   background-image: url(static/img/mouth.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: -0.05vw;
+  background-position-y: -2.4vw;
   background-size: 100%;
-  height: 2vw;
+  height: 1.7vw;
   width: 5vw;
-  top: 9vw;
-  left: 12.2vw;
-  /*--animation: mouthSize 5s infinite;--*/
+  top: 7vw;
+  left: 6.3vw;
+  animation: mouthSize 0.5s infinite;
+  animation-iteration-count: 5;
 }
 @keyframes mouthSize {
-  0% {
-    height: 2px;
+  0%,
+  100% {
+    height: 0vw;
   }
 
   50% {
-    height: 40px;
+    height: 2vw;
+  }
+}
+.mouth2 {
+  position: absolute;
+  background-image: url(static/img/mouth.svg);
+  background-repeat: no-repeat;
+  background-position-x: -0.05vw;
+  background-position-y: -2.4vw;
+  background-size: 100%;
+  height: 1.7vw;
+  width: 5vw;
+  top: 7vw;
+  left: 6.3vw;
+  animation: mouthSize 0.3s infinite;
+}
+@keyframes mouthSize {
+  0%,
+  100% {
+    height: 0vw;
   }
 
+  50% {
+    height: 2vw;
+  }
+}
+.mouth3 {
+  position: absolute;
+  background-image: url(static/img/mouth.svg);
+  background-repeat: no-repeat;
+  background-position-x: -0.05vw;
+  background-position-y: -2.4vw;
+  background-size: 100%;
+  height: 1.7vw;
+  width: 5vw;
+  top: 7vw;
+  left: 6.3vw;
+  animation: mouthSize 0.4s infinite;
+  animation-delay: 2s;
+}
+@keyframes mouthSize {
+  0%,
   100% {
-    height: 2px;
+    height: 0vw;
+  }
+
+  50% {
+    height: 2vw;
   }
 }
