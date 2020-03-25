@@ -3,9 +3,6 @@
   padding: 0;
   font-family: Montserrat;
 }
-<<<<<<< HEAD
-/*------------Call Page Style-------------*/
-=======
 
 #box {
   display: flex;
@@ -26,7 +23,6 @@
 }
 
 /* conference call */
->>>>>>> 66abe4d46b310d973319b1f3b0253bbe39c0626f
 .call-container {
   width: 100%;
   min-height: 100vh;
@@ -65,11 +61,7 @@
   transform-origin: 50% 50%;
 }
 
-<<<<<<< HEAD
 @keyframes ringing {
-=======
-@-moz-keyframes quick-alo-circle-img-anim {
->>>>>>> 66abe4d46b310d973319b1f3b0253bbe39c0626f
   0% {
     -webkit-transform: rotate(0) scale(1) skew(1deg);
   }
