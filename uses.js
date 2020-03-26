@@ -48,6 +48,7 @@ function clickWwwBtn() {
   console.log("clickWwwBtn()");
 
   selectSound();
+  scaleAnimation(HTML.wwwBtn);
   setTimeout(() => {
     window.location.href = "/uses_www.html";
   }, soundDelay);
@@ -57,6 +58,7 @@ function clickGamesBtn() {
   console.log("clickGamesBtn()");
 
   selectSound();
+  scaleAnimation(HTML.gamesBtn);
   setTimeout(() => {
     window.location.href = "/uses_games.html";
   }, soundDelay);
@@ -66,6 +68,7 @@ function clickHomeofficeBtn() {
   console.log("clickHomeofficeBtn()");
 
   selectSound();
+  scaleAnimation(HTML.homeofficeBtn);
   setTimeout(() => {
     window.location.href = "/call.html";
   }, soundDelay);
@@ -76,4 +79,12 @@ function selectSound() {
 
   SOUND.selectBtn = new Audio("sound/selectBtn.wav");
   SOUND.selectBtn.play();
+}
+
+function scaleAnimation(ele) {
+  gsap.to(ele, {
+    transformOrigin: "center",
+    scale: 1.2,
+    duration: 1.2
+  });
 }

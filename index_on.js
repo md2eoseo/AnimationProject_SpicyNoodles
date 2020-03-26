@@ -38,14 +38,15 @@ function startManipulatingTheSvg() {
   gsap.to(HTML.screenOn, { scaleY: 1, duration: 0.4 });
 
   // set click event on blueBtnOn turned on
-  document
-    .querySelector("#blueBtnOn")
-    .addEventListener("click", clickBlueBtnOn);
-  document.querySelector("#aboutBtn").addEventListener("click", clickAboutBtn);
-  document.querySelector("#usesBtn").addEventListener("click", clickUsesBtn);
-  document
-    .querySelector("#evolutionBtn")
-    .addEventListener("click", clickEvolutionBtn);
+  HTML.clickBlueBtnOn = document.querySelector("#blueBtnOn");
+  HTML.aboutBtn = document.querySelector("#aboutBtn");
+  HTML.usesBtn = document.querySelector("#usesBtn");
+  HTML.evolutionBtn = document.querySelector("#evolutionBtn");
+
+  HTML.clickBlueBtnOn.addEventListener("click", clickBlueBtnOn);
+  HTML.aboutBtn.addEventListener("click", clickAboutBtn);
+  HTML.usesBtn.addEventListener("click", clickUsesBtn);
+  HTML.evolutionBtn.addEventListener("click", clickEvolutionBtn);
 }
 
 function clickBlueBtnOn() {
@@ -67,6 +68,7 @@ function clickAboutBtn() {
   console.log("clickAboutBtn()");
 
   selectSound();
+  scaleAnimation(HTML.aboutBtn);
   setTimeout(() => {
     window.location.href = "/about.html";
   }, soundDelay);
@@ -76,6 +78,7 @@ function clickUsesBtn() {
   console.log("clickUsesBtn()");
 
   selectSound();
+  scaleAnimation(HTML.usesBtn);
   setTimeout(() => {
     window.location.href = "/uses.html";
   }, soundDelay);
@@ -85,6 +88,7 @@ function clickEvolutionBtn() {
   console.log("clickEvolutionBtn()");
 
   selectSound();
+  scaleAnimation(HTML.evolutionBtn);
   setTimeout(() => {
     window.location.href = "/evolution.html";
   }, soundDelay);
@@ -102,4 +106,12 @@ function selectSound() {
 
   SOUND.selectBtn = new Audio("sound/selectBtn.wav");
   SOUND.selectBtn.play();
+}
+
+function scaleAnimation(ele) {
+  gsap.to(ele, {
+    transformOrigin: "center",
+    scale: 1.2,
+    duration: 1.2
+  });
 }
