@@ -106,6 +106,7 @@ function startGame() {
     const gameoverText = document.createElementNS(svgns, "text");
     gameoverText.setAttributeNS(null, "x", 20);
     gameoverText.setAttributeNS(null, "y", 120);
+    gameoverText.setAttributeNS(null, "fill", "blue");
     gameoverText.textContent = "GAME OVER!\nYour result is " + snakeL + "!";
     document.querySelector("#gameScreen").appendChild(gameoverText);
     gameIsOver = true;
