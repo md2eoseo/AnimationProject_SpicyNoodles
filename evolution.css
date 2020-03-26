@@ -8,13 +8,14 @@
   min-height: 100vh;
   margin: auto;
   background: radial-gradient(#75c6c3, #3b6362);
+  overflow: hidden;
 }
 
 .back-button {
   position: absolute;
   left: 0.1vw;
   width: 8vw;
-  height: 6vh;
+  height: 3vw;
   padding: 1vw;
 }
 
