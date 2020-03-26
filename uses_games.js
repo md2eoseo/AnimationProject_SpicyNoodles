@@ -52,6 +52,7 @@ function startGame() {
     matrixLimit = matrixSize - 1;
   let speedMs = 250,
     apple = [];
+  svg.setAttributeNS(null, "id", "gameScreen");
   svg.setAttributeNS(null, "width", rectSize * matrixSize);
   svg.setAttributeNS(null, "height", rectSize * matrixSize);
   svg.setAttributeNS(
@@ -101,7 +102,12 @@ function startGame() {
   function gameOver() {
     svg.setAttributeNS(null, "class", "game-over");
     clearInterval(timing);
-    alert("GAME OVER!\nYour result is " + snakeL + "!");
+    // alert("GAME OVER!\nYour result is " + snakeL + "!");
+    const gameoverText = document.createElementNS(svgns, "text");
+    gameoverText.setAttributeNS(null, "x", 20);
+    gameoverText.setAttributeNS(null, "y", 120);
+    gameoverText.textContent = "GAME OVER!\nYour result is " + snakeL + "!";
+    document.querySelector("#gameScreen").appendChild(gameoverText);
     gameIsOver = true;
     return;
   }
