@@ -174,10 +174,10 @@ function startGame() {
     );
   }
 
+  let tStartX = null;
+  let tStartY = null;
   function startup() {
-    if (is_touch_device()) {
-      tStartX = null;
-      tStartY = null;
+    if (true) {
       document.body.addEventListener("touchstart", handleStart, false);
       document.body.addEventListener("touchend", handleEnd, false);
     } else {
@@ -186,7 +186,7 @@ function startGame() {
   }
 
   function handleStart(evt) {
-    evt.preventDefault();
+    // evt.preventDefault();
     tStartX = evt.touches[0].screenX;
     tStartY = evt.touches[0].screenY;
   }
