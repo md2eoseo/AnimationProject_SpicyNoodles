@@ -110,7 +110,16 @@ function startGame() {
     gameoverText.textContent = "GAME OVER!\nYour result is " + snakeL + "!";
     document.querySelector("#gameScreen").appendChild(gameoverText);
     gameIsOver = true;
-    return;
+    setTimeout(() => {
+      return restart();
+    }, 2000);
+  }
+
+  function restart() {
+    console.log("restart");
+    const gameScreen = document.querySelector("#gameScreen");
+    gameScreen.parentNode.removeChild(gameScreen);
+    startGame();
   }
 
   let timing = setInterval(controllingSnake, speedMs);
