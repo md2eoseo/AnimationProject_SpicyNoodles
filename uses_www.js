@@ -38,6 +38,13 @@ function startManipulatingTheSvg() {
   HTML.googlescreen = document.querySelector("#googlescreen");
   HTML.searchBtn = document.querySelector("#searchBtn");
   HTML.searchkey = document.querySelector("#searchkey");
+  //blinking animation
+  gsap.to(HTML.searchBtn, 0.8, {
+    opacity: 0,
+    repeat: -1,
+    repeatDelay: 0.1,
+    delay: 4.2
+  });
 
   gsap.from(HTML.googlescreen, { scaleY: 0.4 });
   gsap.to(HTML.googlescreen, { scaleY: 1, duration: 0.4 });
