@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+/* https://stackoverflow.com/questions/15622386/unwanted-scroll-bar */
 body {
   overflow: hidden;
 }
