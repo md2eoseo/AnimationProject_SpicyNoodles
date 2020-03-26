@@ -9,7 +9,7 @@
 	.st3{font-family:'Montserrat-Bold';}
 	.st4{font-size:39.4024px;}
 	.st5{font-family:'Montserrat-Light';}
-	.st6{font-size:26.2682px;}
+	.st6{font-size:16px;}
 	.st7{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
 </style>
 <g id="timeline">
@@ -30,8 +30,9 @@
 	<g>
 		<rect x="81" y="17" class="st2" width="635" height="255.3"/>
 	</g>
-	<text id="title" transform="matrix(0.8928 0 0 1 408.9814 74.6774)" class="st3 st4">80s Computer</text>
-	<text id="description" transform="matrix(0.8928 0 0 1 414.9863 128.4196)" class="st5 st6">Description</text>
+	<text id="title" transform="matrix(1 0 0 1 408.9814 74.6774)" class="st3 st4">80s Computer</text>
+	<!-- https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject -->
+	<foreignObject id="description" y="-40" width="280" height="180" transform="matrix(1 0 0 1 414.9863 128.4196)" class="st5 st6">Description</foreignObject>
 	<image id="image" x="124.1" y="39.3" class="st7" width="226" height="226"/>
 </g>
 </svg>
