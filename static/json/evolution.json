@@ -3,19 +3,19 @@
     "title": "80s Computer",
     "year": "80s",
     "image": "80s-computer.png",
-    "description": "add something here"
+    "description": "The IBM PC was equipped with an Intel 8088 processor at a speed of 4.77 MHz, 16 Kb of memory extendable to 256 Kb, a 160 K floppy drive and an optional CRT color monitor. The IBM PC also supported other operating systems (OS), such as the CP/M-86, UCSD p-System. However, it was the first computer to feature PC-DOS 1.0, a customized MS-DOS version for IBM computers."
   },
   {
     "title": "90s Computer",
     "year": "90s",
     "image": "90s-computer.png",
-    "description": "add something here"
+    "description": "The A4000 has 2MB of RAM expandable to 4MB on the circuit board and VGA graphic. There is a 2MB floppy disc drive which can automatically detect and PC discs. Another major feature is the newly restyled keyboard. The A4000, with its industry standard 80 MB IDE hard disc, is housed in a slimline case. It has internal support for both Econet and Ethernet."
   },
   {
     "title": "00s Computer",
     "year": "00s",
     "image": "00s-computer.png",
-    "description": "add something here"
+    "description": "The Studio XPS, also referred to as Studio XPS 435MT, was released November 16, 2008. This is a PC with performance somewhat between the XPS 420 and 630. Its processor is the Intel Core i7. The current Studio XPS models, however, with only one PCIe x16 slot and a 475 watt power supply. It has RAID0/1 support, however, as well as the capability of up to 24 GB of RAM."
   },
   {
     "title": "2010s Computer",
