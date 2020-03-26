@@ -38,8 +38,12 @@ function clickable() {
   console.log("clickable()");
 
   // home, back button click event
-  document.querySelector("#home-button").addEventListener("click", goIndexHTML);
-  document.querySelector("#back-button").addEventListener("click", goIndexHTML);
+  document
+    .querySelector("#home-button")
+    .addEventListener("click", goIndexOnHTML);
+  document
+    .querySelector("#back-button")
+    .addEventListener("click", goIndexOnHTML);
 
   // select bullets and add click event
   document.querySelectorAll("#bullets circle").forEach((ele, i) =>
@@ -49,8 +53,8 @@ function clickable() {
   );
 }
 
-function goIndexHTML() {
-  window.location.href = "/index.html";
+function goIndexOnHTML() {
+  window.location.href = "/index_on.html";
 }
 
 function clickBullet(ele, i) {
