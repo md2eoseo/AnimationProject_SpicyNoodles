@@ -60,7 +60,7 @@ function clickBlueBtnOn() {
   gsap.to(HTML.screenOn, { scaleY: 0, duration: 0.5 });
 
   setTimeout(() => {
-    window.location.href = "/index.html";
+    window.location.href = "./index.html";
   }, offDelay);
 }
 

@@ -50,7 +50,7 @@ function clickWwwBtn() {
   selectSound();
   scaleAnimation(HTML.wwwBtn);
   setTimeout(() => {
-    window.location.href = "/uses_www.html";
+    window.location.href = "./uses_www.html";
   }, soundDelay);
 }
 
@@ -60,7 +60,7 @@ function clickGamesBtn() {
   selectSound();
   scaleAnimation(HTML.gamesBtn);
   setTimeout(() => {
-    window.location.href = "/uses_games.html";
+    window.location.href = "./uses_games.html";
   }, soundDelay);
 }
 
@@ -70,7 +70,7 @@ function clickHomeofficeBtn() {
   selectSound();
   scaleAnimation(HTML.homeofficeBtn);
   setTimeout(() => {
-    window.location.href = "/call.html";
+    window.location.href = "./call.html";
   }, soundDelay);
 }
 

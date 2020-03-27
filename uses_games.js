@@ -5,13 +5,8 @@ require("@babel/polyfill");
 window.addEventListener("DOMContentLoaded", start);
 
 const HTML = {};
-const SOUND = {};
-SOUND.typespace = new Audio("sound/typespace.mp3");
-SOUND.typekey1 = new Audio("sound/typekey1.mp3");
-SOUND.typekey2 = new Audio("sound/typekey2.mp3");
 const svgFiles = ["svg/screenZoomed.svg"];
 const svgData = [];
-const soundDelay = 1800;
 
 async function start() {
   console.log("start()");
