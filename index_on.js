@@ -70,7 +70,7 @@ function clickAboutBtn() {
   selectSound();
   scaleAnimation(HTML.aboutBtn);
   setTimeout(() => {
-    window.location.href = "/about.html";
+    window.location.href = "./about.html";
   }, soundDelay);
 }
 
@@ -80,7 +80,7 @@ function clickUsesBtn() {
   selectSound();
   scaleAnimation(HTML.usesBtn);
   setTimeout(() => {
-    window.location.href = "/uses.html";
+    window.location.href = "./uses.html";
   }, soundDelay);
 }
 
@@ -90,7 +90,7 @@ function clickEvolutionBtn() {
   selectSound();
   scaleAnimation(HTML.evolutionBtn);
   setTimeout(() => {
-    window.location.href = "/evolution.html";
+    window.location.href = "./evolution.html";
   }, soundDelay);
 }
 

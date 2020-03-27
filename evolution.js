@@ -54,7 +54,7 @@ function clickable() {
 }
 
 function goIndexOnHTML() {
-  window.location.href = "/index_on.html";
+  window.location.href = "./index_on.html";
 }
 
 function clickBullet(ele, i) {

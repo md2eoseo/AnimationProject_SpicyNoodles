@@ -34,5 +34,5 @@ function startManipulatingTheSvg() {
 function clickBlueBtn() {
   console.log("clickBlueBtn()");
 
-  window.location.href = "/index_on.html";
+  window.location.href = "./index_on.html";
 }
